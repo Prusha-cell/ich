@@ -1,0 +1,17 @@
+#!/bin/bash
+
+USER="Vadym"
+
+echo "Date: $(date)"
+
+echo "hello $USER!"
+
+echo "current directory: $(pwd)"
+
+QUANTITY_BIOSET=$(ps -ef | grep "bioset" | grep -v "grep" | wc -l)
+
+echo $QUANTITY_BIOSET
+
+FILE_RIGHT=$(ls -la /etc/passwd | awk '{print $1}')
+
+echo $FILE_RIGHT
